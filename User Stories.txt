@@ -1,0 +1,8 @@
+Scenario: Select an auditorium
+	Given I am on the CP Management System’s home page, I should see “Select auditorium”. When I select it, I should be able to see the list of auditoriums, and when I select one of them, I should be able to view the auditorium’s seat map.
+Scenario: Edit the seating plan
+	Given I am on the auditorium seat map page, I should see an option “Edit seating plan”. When I select it, a key should pop up, allowing me to enter a role number. And after I’ve entered a role number, I should be able to select a seat. When I select a seat, I should see a “Save changes?” prompt. When I click on the button that seat should be assigned to that role number.
+Scenario: Calculate the mean
+	Given I am on the auditorium seat map page, I should see an “End Session” button. When I select it, I should see the mean CP of that lecture along with the maximum and minimum CP score. In addition, I would also like to be able to see a “History” button, clicking which, I should be shown the CP’s of all the previous lectures.
+Scenario: Maximum CP score
+	Given I am on the auditorium seat map page, I should see “Set maximum score”. When I select it, a key should pop up. When I enter a number, I should be able to see a box showing the max CP score. Now when I click on a seat more than max times, it should turn red and the CP score for that person should not increase.
